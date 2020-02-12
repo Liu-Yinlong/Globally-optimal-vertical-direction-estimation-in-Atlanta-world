@@ -1,9 +1,11 @@
 # Globally-optimal-vertical-direction-estimation-in-Atlanta-world
 Globally optimal vertical direction estimation in Atlanta world
-Author: YinlongLiu AT outlook.com
-Date:12-Feb-2020
+    
+    Author: YinlongLiu AT outlook.com
+    
+    Date:12-Feb-2020
 
-Matlab2019A, Win10
+    Matlab2019A, Win10
 
 1.First step:
 
