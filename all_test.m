@@ -23,14 +23,17 @@ for ii=1:N
 end
 
 figure
-aboxplot(data_reshape(error,re_num),'Colormap',parula(6),'OutlierMarker','*','OutlierMarkerSize',10);
+aboxplot(data_reshape(error,re_num),'Colormap',lines(6),'OutlierMarker','*','OutlierMarkerSize',10);
 legend('exp','ste-circle','ste-square','scs-square','rs','ransac')
+title('error(\circ)')
 figure
-aboxplot(data_reshape(time,re_num),'Colormap',parula(6));
+aboxplot(data_reshape(time,re_num),'Colormap',lines(6));
 legend('exp','ste-circle','ste-square','scs-square','rs','ransac')
+title('time(s)')
 figure
-aboxplot(data_reshape(iter,re_num),'Colormap',parula(6));
+aboxplot(data_reshape(iter,re_num),'Colormap',lines(6));
 legend('exp','ste-circle','ste-square','scs-square','rs','ransac')
+title('iter(number)')
 
 function [error,time,iter]=once(sum_num, outlier_rate,noise_level)
 
