@@ -8,7 +8,7 @@ addpath('./Globally-Searching-Rotation-Search/')
 %addpath('./show_volume/')
 addpath('./aboxplot/')
 addpath('./RANSAC/')
-outlier_rate=0.1:0.1:0.9;
+outlier_rate=0.1:0.1:0.5;
 re_num=100;
 N=length(outlier_rate);
 sum_num=500;
@@ -78,8 +78,8 @@ tim_ransac=toc;
 error_ransac=acosd(abs(ransac_direction'*vertical_direction));
 
 error=[error_exp, error_ste,error_square,error_scs,error_rs,error_ransac];
-time=[iter_exp, iter_ste,iter_square,iter_scs,iter_rs,iter_ransac];
-iter=[tim_exp, tim_ste,tim_square,tim_scs,tim_rs,tim_ransac];
+iter=[iter_exp, iter_ste,iter_square,iter_scs,iter_rs,iter_ransac];
+time=[tim_exp, tim_ste,tim_square,tim_scs,tim_rs,tim_ransac];
 
 % disp([error_exp, error_ste,error_square,error_scs,error_rs,error_ransac])
 % disp([iter_exp, iter_ste,iter_square,iter_scs,iter_rs])
