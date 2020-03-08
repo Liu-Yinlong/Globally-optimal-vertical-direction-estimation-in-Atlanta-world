@@ -8,8 +8,13 @@ new_upper=zeros(1,4);
 new_lower=zeros(1,4);
 best_branch=B;
 
+ss=get(0,'screensize');
+
+len_x=0.45*ss(3);
+len_y=0.45*ss(4);
 
 figure;
+set(gcf,'position',[1 1 len_x len_y]);
 title('Evolution of the bounds of exp-map')
 hold on
 grid
@@ -17,17 +22,19 @@ h_l=animatedline('color','r');
 h_u=animatedline('color','b');
 legend('upper bound','lower bound')
 figure
+set(gcf,'position',[1 len_y len_x len_y]);
 title('Evolution of the bounds of exp-map')
 h_v=animatedline('color','k');
 legend('volume remaning')
 grid
 figure
+set(gcf,'position',[len_x 1 len_x len_y]);
 title('Evolution of the bounds of exp-map')
 h_v_num=animatedline('color','k');
 legend('number of branches')
 grid
 f_b=figure;
-
+set(gcf,'position',[len_x len_y len_x len_y]);
 
 
 iter=0;
