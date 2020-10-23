@@ -13,7 +13,7 @@ https://ieeexplore.ieee.org/document/9207842 DOI: 10.1109/TPAMI.2020.3027047
 
     try-> First_dynamic_show.m
 
-2. run-> all_test.m, then test all BnB-based methods 
+2.run-> all_test.m, then test all BnB-based methods 
 
 3.have fun
 
