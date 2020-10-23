@@ -1,5 +1,6 @@
 # Globally-optimal-vertical-direction-estimation-in-Atlanta-world
 Globally optimal vertical direction estimation in Atlanta world
+
 https://ieeexplore.ieee.org/document/9207842 DOI: 10.1109/TPAMI.2020.3027047
     
     Author: YinlongLiu AT outlook.com
